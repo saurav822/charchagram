@@ -1,12 +1,14 @@
 # CharchaGram
 
-> **Discussions into Accountability** — a civic-tech platform enabling citizens to raise concerns, foster dialogue, and hold public entities accountable across Bihar's constituencies.
+> **Where Local Voices Become Public Record** — a civic-tech platform that transforms citizen conversations into structured accountability, one constituency at a time.
+
+**Live:** [www.charchagram.com](https://www.charchagram.com)
 
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude%20AI-orange?logo=anthropic)](https://claude.ai)
 [![Powered by Next.js](https://img.shields.io/badge/Frontend-Next.js%2015-black?logo=next.js)](https://nextjs.org)
 [![Backend: Express](https://img.shields.io/badge/Backend-Express%204-green?logo=express)](https://expressjs.com)
 [![Database: MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-green?logo=mongodb)](https://www.mongodb.com/atlas)
-[![CI](https://github.com/your-org/charchagram/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/charchagram/actions)
+[![CI](https://github.com/saurav822/charchagram/actions/workflows/ci.yml/badge.svg)](https://github.com/saurav822/charchagram/actions)
 
 ---
 
@@ -26,15 +28,26 @@
 
 ## What is CharchaGram?
 
-CharchaGram is a **multilingual civic accountability platform** built for Bihar, India. Citizens can:
+Every constituency has a story — roads that don't get repaired, hospitals that run out of medicine, schools without teachers. Most of the time, these stories stay within the neighbourhood, fade into frustration, and disappear without a trace.
 
-- **Post concerns** anchored to their constituency
-- **Vote in polls** on local issues
-- **Comment and discuss** on citizen-raised posts
-- **Read long-form blogs** from community journalists
-- **Track sentiment** across constituencies in real time
+**CharchaGram** changes that.
 
-The platform is designed to turn everyday conversations into structured, evidence-backed collective action.
+It is a **multilingual civic accountability platform** that gives citizens a structured, digital space to raise local concerns, discuss community issues, and hold elected representatives accountable — all anchored to their specific constituency so that every voice lands exactly where it matters.
+
+### How it works
+
+- **Post a concern** — residents share ground-level issues tied directly to their constituency, visible to neighbours, journalists, and decision-makers alike
+- **Follow the conversation** — threaded comments let communities discuss, debate, and build collective narratives around local problems
+- **Vote in polls** — quick opinion polls surface real-time community sentiment on decisions that affect daily life
+- **Read the blogs** — long-form pieces from citizen journalists and community writers give depth and context to the numbers
+- **Know your representative** — each constituency page surfaces the sitting member's background, vote share, experience, and department-wise work record so citizens can judge performance with facts, not rumour
+- **Go beyond the ward** — a unified feed lets anyone read what's being discussed across all constituencies, turning local grievances into a wider public conversation
+
+### Why it matters
+
+Democracy works best when citizens are informed and heard. CharchaGram is built on the belief that the gap between a citizen's complaint and a representative's action can be closed — not by shouting louder, but by building a permanent, searchable, shareable public record of what was said, when, and by whom.
+
+It is designed from the ground up for **low-bandwidth mobile users**, with a PWA that works on entry-level Android devices and Hindi-first UI that puts the language of the people front and centre.
 
 ---
 
@@ -140,7 +153,7 @@ charchagram/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/your-org/charchagram.git
+git clone https://github.com/saurav822/charchagram.git
 cd charchagram
 npm install          # installs all workspaces
 ```
@@ -225,4 +238,4 @@ Full documentation at `/api-docs` when the backend is running.
 
 ---
 
-*Built with ❤️ and [Claude AI](https://claude.ai) for Bihar's civic discourse.*
+*Built with ❤️ and [Claude AI](https://claude.ai) for citizens who believe local conversations deserve a permanent stage.*
