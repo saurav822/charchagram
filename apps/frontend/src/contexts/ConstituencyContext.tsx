@@ -1,5 +1,17 @@
 'use client';
 
+/**
+ * ConstituencyContext — provides the list of Bihar constituencies to the entire app.
+ *
+ * The constituency list is fetched once on app load from GET /api/constituencies,
+ * filtered to exclude the top-level "Bihar" state document (BIHAR_STATE_ID),
+ * and made available via useConstituencies().
+ *
+ * Components that let users select or filter by constituency (e.g. NewPost,
+ * EditUserProfile, YourArea) consume this context instead of fetching the
+ * list independently — avoiding redundant API calls.
+ */
+
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import axios from 'axios';
 import { ConstituencyListType } from '@/types/constituency';
