@@ -1,0 +1,661 @@
+@import "tailwindcss";
+
+.markdown-content {
+  color: #374151;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.markdown-content h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.markdown-content h2 {
+  font-size: 1.5rem;
+}
+
+.markdown-content h3 {
+  font-size: 1.25rem;
+}
+
+.markdown-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+.markdown-content p + p {
+  margin-top: 1rem;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+.markdown-content pre {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.markdown-content a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.markdown-content a:hover {
+  color: #1d4ed8;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* Center images in markdown editor preview */
+.wmde-markdown-var img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* Add spacing between paragraphs in markdown editor */
+.wmde-markdown-var p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+.wmde-markdown-var p + p {
+  margin-top: 1rem;
+}
+
+.markdown-content table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+}
+
+.markdown-content table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  /* background: var(--background); */
+  /* color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Set a consistent light background color for the entire page */
+  background-color: #939cab;
+  /* Matches the background of your MessagePage */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.banner-text {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.banner-text-orange {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #f97316;
+  /* orange-400 */
+}
+
+.font-color-orange {
+  color: #DC3C22;
+}
+
+.banner-subtitle {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: semi-bold;
+  line-height: 24px;
+  text-align: center;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.banner-info-text {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.manifesto-score-text {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.vidhayak-info-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  color: #1A1B1E;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.vidhayak-info-text-subheading {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake-effect {
+  animation: shake 0.5s;
+}
+
+.candidate-profile-heading {
+  font-family: Noto Sans Devanagari;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  color: #1A1B1E;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.candidate-profile-subheading {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-percentage-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  color: #004030;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-percentage-text-subheading {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  color: #6B7280;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.candidate-profile-sakriya-charcha-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: small;
+  font-size: 10px;
+  color: #6B7280;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-main-heading {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  color: #1A1B1E;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-subheading-text-experience {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 12px;
+  color: #6B7280;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-subheading-text-last-election {
+  font-family: Noto Sans Devanagari;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 12px;
+  color: #303D50;
+  line-height: 16px;
+  letter-spacing: 0px;
+
+}
+
+.candidate-profile-vidhayak-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  color: #273F4F;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-main-heading-area-name {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  color: #1D2530;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.candidate-profile-subheading-text-satisfaction-percentage {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0px;
+
+}
+
+.candidate-profile-heading-text-satisfaction-percentage-verygood {
+  font-family: Noto Sans Devanagari;
+  font-weight: 200;
+  font-style: Small;
+  font-size: 6px;
+  color: #6B7280;
+  line-height: 12px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+
+}
+
+.postsection-dropdown-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: start;
+  vertical-align: middle;
+
+}
+
+.postsection-subheading-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}
+
+.postsection-heading-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 22.75px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.postsection-dropdown-text span {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 22.75px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.postsection-constituency-area-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #7B899D;
+}
+
+.postsection-author-name-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1D2530
+}
+
+.postsection-author-time-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #7B899D
+}
+
+.postsection-category-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #176DCF
+}
+
+.postsection-post-content-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1D2530
+}
+
+.postsection-tag-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #456882
+}
+
+.postsection-comment-button {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+}
+
+.postsection-comment-author-name-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1D2530
+}
+
+.postsection-comment-content-text {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}
+
+.postsection-comment-more-comments-button {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #456882;
+}
+
+.postsection-community-rule-header {
+  font-family: Noto Sans Devanagari;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #456882
+}
+
+.postsection-community-rule-title {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  color: #1D2530;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}
+
+.postsection-community-rule-description {
+  font-family: Noto Sans Devanagari;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  color: #7B899D;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}
+
+.postsection-comment-more-posts-button {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  color: #F4F4F4;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.postsection-community-rule-note {
+  font-family: Noto Sans Devanagari;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #7B899D;
+}
+
+.postsection-comment-reply-button {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  color: #1D2530;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.postsection-share-button {
+  font-family: Noto Sans Devanagari;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+}
