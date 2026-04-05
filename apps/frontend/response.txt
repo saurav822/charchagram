@@ -1,0 +1,22 @@
+{area_name: string,
+vidhayak_info:{
+    name: string,
+    image_url: string,
+    age: number
+    last_election_vote_percentage: string
+    experience: number,
+    party_name: enum,
+    party_icon_url: string,
+    manifesto_link: string,
+    metadata: {
+        education: string,
+        net_worth: string,
+        criminal_cases: number,
+        attendance: string,
+        questions_asked: number,
+        funds_utilisation: string,
+    }
+},
+dept_info: [{id: UUID,dept_name: string, work_info: [string], survey_score: [{question: string, yes_votes: number, no_votes: number}]}]
+other_candidates: [{id: number, candidate_name: String,candidate_party: ENUM, vote_share: string}]
+}
