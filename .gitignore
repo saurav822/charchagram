@@ -1,0 +1,73 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+# NEVER commit .env files or service account keys
+.env
+.env.*
+!.env.example
+!**/.env.example
+serviceAccountKey.json
+*.pem
+*.key
+*.cert
+
+# ── Next.js build output ──────────────────────────────────────────────────────
+apps/frontend/.next/
+apps/frontend/out/
+apps/frontend/.vercel
+
+# ── TypeScript build output ───────────────────────────────────────────────────
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Test coverage ─────────────────────────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Large data files (migration artifacts — not source code) ──────────────────
+apps/backend/finalObj.json
+apps/backend/output--26aug.json
+apps/backend/src/migrations/*.json
+apps/backend/mongodump-*/
+
+# ── OS artifacts ─────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+.cache
+.parcel-cache
+tmp/
+temp/
+.vercel
