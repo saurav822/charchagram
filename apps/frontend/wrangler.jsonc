@@ -1,0 +1,10 @@
+{
+    "name": "charchamanch",
+    "compatibility_date": "2025-09-01",
+    "assets": {
+      "directory": "./.next"
+    },
+    "build": {
+      "command": "npm run build"
+    }
+  }
